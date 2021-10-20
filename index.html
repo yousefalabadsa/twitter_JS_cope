@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>twiter</title>
+    <link rel="stylesheet" href="tweeter.css">
+</head>
+<body>
+    <div class="page">
+        <div class="leftbar sticky">
+            <input type="button" value="home" class="btn"><br>
+            <input type="button" value="Explor" class="btn"><br>
+            <input type="button" value="Notifications" class="btn"><br>
+            <input type="button" value="Messages" class="btn"><br>
+            <input type="button" value="Bookmarks" class="btn"><br>
+            <input type="button" value="Lists" class="btn"><br>
+            <input type="button" value="Profile" class="btn"><br>
+            <input type="button" value="More" class="btn"><br>
+            <button class="postBtn btn" onclick="openForm()"> tweet</button>
+            <div class="profile">
+                <img id="imge" src="img/download.png" alt="PFP">
+                <h3>Yousef</h3>
+            </div>
+        </div>
+        <div class="mian sticky">
+            <div id="topbar">
+                <a href="#home">Home</a>
+            </div>
+            <div class="postFild">
+                <div class="postFild__top">
+                    <input class="postFild_input" id="mainPost" placeholder="What's happening?">
+                </div>
+                <div class="postFild__bottom"> 
+                    <button id="Tweet_button" class="butn">Post</button>
+                </div>
+            </div>
+            <div class="newsFeed">
+            </div>
+        </div>
+        <div class="rightbar">
+            <div class="search">
+                <input type="search" class="search input" >
+                <input type="button" value="search" class="btn">
+                <!-- <button class="btn" type="search">search</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="postForm form-container" id="postForm">
+        <input type="text" id="tweet" name="tweet" placeholder="what to do">
+        <input type="button" value="submit" class="submit butnn formBtnLeft " >
+        <input type="button" value="cancle" class="butnn formBtnRight" onclick="closeForm()">
+    </div>
+<script src="myscripts.js"></script>
+</html>
